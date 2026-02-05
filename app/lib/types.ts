@@ -1,3 +1,4 @@
+import { LabCategory } from "./constants";
 import React, { JSX } from "react";
 
 /* ===================== User ===================== */
@@ -35,7 +36,19 @@ export interface LabResult {
   name: string;
   date: string;
   status: "Normal" | "High" | "Low" | "Negative" | string;
+  category: LabCategory;
 }
+/* ===================== LabCategories ===================== */
+
+export type LabCategory =
+  | "Internal Medicine" // باطنة
+  | "Orthopedics" // عظام
+  | "Pediatrics" // أطفال
+  | "Endocrinology" // غدد صماء
+  | "Nephrology" // كُلى
+  | "Hematology" // دم
+  | "Infectious Diseases" // أمراض معدية
+  | "General"; // عام
 
 /* ===================== Vaccinations ===================== */
 export interface Vaccination {

@@ -173,8 +173,22 @@ export const MedicationGrid = ({ number }: { number?: number }) => {
 
 export const LabResults = ({ number }: { number?: number }) => {
   const shown = number ? LAB_RESULTS.slice(0, number) : LAB_RESULTS;
+
+  // group by category
+  const groupedResults = shown.reduce(
+    (acc, lab) => {
+      if (!acc[lab.category]) {
+        acc[lab.category] = [];
+      }
+      acc[lab.category].push(lab);
+      return acc;
+    },
+    {} as Record<string, typeof LAB_RESULTS>,
+  );
+
   return (
     <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col h-full">
+      {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-full bg-indigo-50 text-indigo-500 flex items-center justify-center">
@@ -190,25 +204,49 @@ export const LabResults = ({ number }: { number?: number }) => {
         </Link>
       </div>
 
-      <div className="space-y-3 flex-1">
-        {shown.map((l, i) => (
-          <div
-            key={i}
-            className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50"
-          >
-            <div>
-              <h4 className="text-sm font-semibold text-slate-900">{l.name}</h4>
-              <p className="text-[10px] text-slate-500">{l.date}</p>
+      {/* Categories */}
+      <div className="space-y-6 flex-1">
+        {Object.entries(groupedResults).map(([category, labs]) => (
+          <div key={category} className="space-y-3">
+            {/* Category title */}
+            <div className="flex items-center gap-3 mt-2">
+              <span className="h-6 w-1 rounded-full bg-indigo-500" />
+
+              <h4 className="text-sm font-semibold text-slate-700 tracking-wide">
+                {category}
+              </h4>
+
+              <span className="flex-1 h-px bg-slate-200" />
             </div>
-            <span
-              className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                l.status === "Normal"
-                  ? "bg-green-50 text-green-600"
-                  : "bg-orange-50 text-orange-600"
-              }`}
-            >
-              {l.status}
-            </span>
+
+            {/* Labs */}
+            {labs.map((l, i) => (
+              <div
+                key={i}
+                className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50"
+              >
+                <div>
+                  <h5 className="text-sm font-semibold text-slate-900">
+                    {l.name}
+                  </h5>
+                  <p className="text-[10px] text-slate-500">{l.date}</p>
+                </div>
+
+                <span
+                  className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                    l.status === "Normal"
+                      ? "bg-green-50 text-green-600"
+                      : l.status === "High"
+                        ? "bg-red-50 text-red-600"
+                        : l.status === "Low"
+                          ? "bg-yellow-50 text-yellow-600"
+                          : "bg-slate-100 text-slate-600"
+                  }`}
+                >
+                  {l.status}
+                </span>
+              </div>
+            ))}
           </div>
         ))}
       </div>

@@ -75,26 +75,104 @@ export const MEDICATIONS: Medication[] = [
 ];
 
 export const LAB_RESULTS: LabResult[] = [
-  { name: "Lipid Panel", date: "Oct 12, 2023", status: "Normal" },
-  { name: "Blood Glucose", date: "Oct 12, 2023", status: "High" },
-  { name: "Hemoglobin", date: "Oct 12, 2023", status: "Normal" },
-  { name: "HbA1c", date: "Sep 28, 2023", status: "High" },
-  { name: "Kidney Function (eGFR)", date: "Sep 28, 2023", status: "Normal" },
-  { name: "Liver Enzymes (ALT/AST)", date: "Aug 19, 2023", status: "Normal" },
-  { name: "Thyroid Panel (TSH/T3/T4)", date: "Aug 19, 2023", status: "High" },
+  {
+    name: "Lipid Panel",
+    date: "Oct 12, 2023",
+    status: "Normal",
+    category: "Internal Medicine", // باطنة
+  },
+  {
+    name: "Blood Glucose",
+    date: "Oct 12, 2023",
+    status: "High",
+    category: "Endocrinology", // غدد
+  },
+  {
+    name: "Hemoglobin",
+    date: "Oct 12, 2023",
+    status: "Normal",
+    category: "Hematology", // دم
+  },
+  {
+    name: "HbA1c",
+    date: "Sep 28, 2023",
+    status: "High",
+    category: "Endocrinology",
+  },
+  {
+    name: "Kidney Function (eGFR)",
+    date: "Sep 28, 2023",
+    status: "Normal",
+    category: "Nephrology", // كُلى
+  },
+  {
+    name: "Liver Enzymes (ALT/AST)",
+    date: "Aug 19, 2023",
+    status: "Normal",
+    category: "Internal Medicine", // باطنة
+  },
+  {
+    name: "Thyroid Panel (TSH/T3/T4)",
+    date: "Aug 19, 2023",
+    status: "High",
+    category: "Endocrinology",
+  },
   {
     name: "CBC (Complete Blood Count)",
     date: "Jul 02, 2023",
     status: "Normal",
+    category: "Hematology",
   },
-  { name: "Vitamin D Level", date: "Jun 15, 2023", status: "Low" },
-  { name: "Electrolyte Panel", date: "Jun 15, 2023", status: "Normal" },
-  { name: "Urinalysis", date: "May 11, 2023", status: "Normal" },
-  { name: "CRP (Inflammation Marker)", date: "May 11, 2023", status: "High" },
-  { name: "Iron & Ferritin", date: "Apr 01, 2023", status: "Low" },
-  { name: "A1 Serum Protein", date: "Apr 01, 2023", status: "Normal" },
-  { name: "COVID-19 PCR", date: "Mar 20, 2023", status: "Negative" },
+  {
+    name: "Vitamin D Level",
+    date: "Jun 15, 2023",
+    status: "Low",
+    category: "Orthopedics", // عظام
+  },
+  {
+    name: "Electrolyte Panel",
+    date: "Jun 15, 2023",
+    status: "Normal",
+    category: "Internal Medicine",
+  },
+  {
+    name: "Urinalysis",
+    date: "May 11, 2023",
+    status: "Normal",
+    category: "Nephrology",
+  },
+  {
+    name: "CRP (Inflammation Marker)",
+    date: "May 11, 2023",
+    status: "High",
+    category: "Internal Medicine",
+  },
+  {
+    name: "Iron & Ferritin",
+    date: "Apr 01, 2023",
+    status: "Low",
+    category: "Hematology",
+  },
+  {
+    name: "A1 Serum Protein",
+    date: "Apr 01, 2023",
+    status: "Normal",
+    category: "General",
+  },
+  {
+    name: "COVID-19 PCR",
+    date: "Mar 20, 2023",
+    status: "Negative",
+    category: "Infectious Diseases", // أمراض معدية
+  },
+  {
+    name: "Pediatric Growth Hormone Test",
+    date: "Mar 10, 2023",
+    status: "Normal",
+    category: "Pediatrics", // أطفال
+  },
 ];
+
 
 export const VACCINATIONS = [
   { name: "Flu Shot (2023)", status: "completed" },
