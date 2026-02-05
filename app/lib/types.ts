@@ -1,4 +1,3 @@
-import { LabCategory } from "./constants";
 import React, { JSX } from "react";
 
 /* ===================== User ===================== */
