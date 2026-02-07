@@ -10,7 +10,7 @@ const Solution: React.FC = () => {
             <div className="relative group">
               <div className="absolute -inset-4 bg-blue-100 rounded-3xl opacity-50 group-hover:opacity-70 transition-opacity"></div>
               <img
-                src="photo1.jpeg"
+                src="aa.jpeg"
                 alt="Doctor with tablet"
                 className="relative rounded-2xl shadow-xl w-full object-cover h-[#400px]"
               />

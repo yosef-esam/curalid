@@ -37,6 +37,8 @@ export const ProfileCard: React.FC = () => (
     <p className="text-slate-500 text-sm mb-6">
       {USER_DATA.gender}, {USER_DATA.age} yrs
     </p>
+    <p className="text-slate-500 text-3xl mb-6">DNA</p>
+    <img src="/dna.png" alt="" className=" rounded-2xl" />
 
     <div className="w-full bg-slate-50 rounded-xl p-4 border border-slate-100 mb-6">
       <p className="text-[10px] font-bold text-blue-600 uppercase tracking-wider mb-1">

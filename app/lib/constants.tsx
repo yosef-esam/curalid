@@ -24,17 +24,17 @@ import {
 } from "./types";
 
 export const USER_DATA: UserProfile = {
-  name: "hanan khalil",
+  name: "Khadija Mohamed",
   role: "Patient",
-  age: 34,
-  gender: "Female",
-  id: "CURA-8829-102",
-  bloodType: "O+",
-  motherBloodType: "A+",
-  fatherBloodType: "O-",
+  age: 1.5,
+  gender: "female",
+  id: "CURA-3453-8653",
+  bloodType: "b+",
+  motherBloodType: "o-",
+  fatherBloodType: "AB+",
   height: "170 cm",
-  weight: "65 kg",
-  avatar: "/profile.png",
+  weight: "80 kg",
+  avatar: "/bb.jpeg",
 };
 
 export const CONDITIONS: Condition[] = [
@@ -52,127 +52,9 @@ export const CONDITIONS: Condition[] = [
   },
 ];
 
-export const MEDICATIONS: Medication[] = [
-  { name: "Lisinopril", dosage: "10mg", frequency: "Daily" },
-  { name: "Albuterol Inhaler", dosage: "90mcg", frequency: "As needed" },
-  { name: "Metformin", dosage: "500mg", frequency: "Twice daily" },
-  { name: "Atorvastatin", dosage: "20mg", frequency: "Daily" },
-  { name: "Losartan", dosage: "50mg", frequency: "Daily" },
-  { name: "Levothyroxine", dosage: "100mcg", frequency: "Daily (before food)" },
-  { name: "Amoxicillin", dosage: "500mg", frequency: "Three times daily" },
-  { name: "Ibuprofen", dosage: "400mg", frequency: "Every 8 hours as needed" },
-  { name: "Aspirin", dosage: "81mg", frequency: "Daily" },
-  { name: "Vitamin D3", dosage: "2000 IU", frequency: "Daily" },
-  { name: "Insulin Glargine", dosage: "10 units", frequency: "Nightly" },
-  { name: "Omeprazole", dosage: "20mg", frequency: "Daily (AM)" },
-  { name: "Cetirizine", dosage: "10mg", frequency: "Daily" },
-  { name: "Montelukast", dosage: "10mg", frequency: "Nightly" },
-  {
-    name: "Paracetamol",
-    dosage: "500mg",
-    frequency: "Every 6 hours as needed",
-  },
-];
+export const MEDICATIONS: Medication[] = [];
 
-export const LAB_RESULTS: LabResult[] = [
-  {
-    name: "Lipid Panel",
-    date: "Oct 12, 2023",
-    status: "Normal",
-    category: "Internal Medicine", // باطنة
-  },
-  {
-    name: "Blood Glucose",
-    date: "Oct 12, 2023",
-    status: "High",
-    category: "Endocrinology", // غدد
-  },
-  {
-    name: "Hemoglobin",
-    date: "Oct 12, 2023",
-    status: "Normal",
-    category: "Hematology", // دم
-  },
-  {
-    name: "HbA1c",
-    date: "Sep 28, 2023",
-    status: "High",
-    category: "Endocrinology",
-  },
-  {
-    name: "Kidney Function (eGFR)",
-    date: "Sep 28, 2023",
-    status: "Normal",
-    category: "Nephrology", // كُلى
-  },
-  {
-    name: "Liver Enzymes (ALT/AST)",
-    date: "Aug 19, 2023",
-    status: "Normal",
-    category: "Internal Medicine", // باطنة
-  },
-  {
-    name: "Thyroid Panel (TSH/T3/T4)",
-    date: "Aug 19, 2023",
-    status: "High",
-    category: "Endocrinology",
-  },
-  {
-    name: "CBC (Complete Blood Count)",
-    date: "Jul 02, 2023",
-    status: "Normal",
-    category: "Hematology",
-  },
-  {
-    name: "Vitamin D Level",
-    date: "Jun 15, 2023",
-    status: "Low",
-    category: "Orthopedics", // عظام
-  },
-  {
-    name: "Electrolyte Panel",
-    date: "Jun 15, 2023",
-    status: "Normal",
-    category: "Internal Medicine",
-  },
-  {
-    name: "Urinalysis",
-    date: "May 11, 2023",
-    status: "Normal",
-    category: "Nephrology",
-  },
-  {
-    name: "CRP (Inflammation Marker)",
-    date: "May 11, 2023",
-    status: "High",
-    category: "Internal Medicine",
-  },
-  {
-    name: "Iron & Ferritin",
-    date: "Apr 01, 2023",
-    status: "Low",
-    category: "Hematology",
-  },
-  {
-    name: "A1 Serum Protein",
-    date: "Apr 01, 2023",
-    status: "Normal",
-    category: "General",
-  },
-  {
-    name: "COVID-19 PCR",
-    date: "Mar 20, 2023",
-    status: "Negative",
-    category: "Infectious Diseases", // أمراض معدية
-  },
-  {
-    name: "Pediatric Growth Hormone Test",
-    date: "Mar 10, 2023",
-    status: "Normal",
-    category: "Pediatrics", // أطفال
-  },
-];
-
+export const LAB_RESULTS: LabResult[] = [];
 
 export const VACCINATIONS = [
   { name: "Flu Shot (2023)", status: "completed" },

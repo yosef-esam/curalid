@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
             <div className="relative w-full max-w-[#500px]">
               <div className="absolute -inset-1 bg-linear-to-r from-blue-400 to-indigo-500 rounded-2xl blur opacity-25"></div>
               <img
-                src="photo1.jpeg"
+                src="ss.jpeg"
                 alt="Digital Medical ID Interface"
                 className="relative rounded-2xl shadow-2xl border border-gray-100"
               />
