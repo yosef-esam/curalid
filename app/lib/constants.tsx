@@ -30,7 +30,7 @@ export const USER_DATA: UserProfile = {
   gender: "female",
   id: "CURA-3453-8653",
   bloodType: "b+",
-  motherBloodType: "o-",
+  motherBloodType: "o+",
   fatherBloodType: "AB+",
   height: "170 cm",
   weight: "80 kg",
@@ -57,9 +57,12 @@ export const MEDICATIONS: Medication[] = [];
 export const LAB_RESULTS: LabResult[] = [];
 
 export const VACCINATIONS = [
-  { name: "Flu Shot (2023)", status: "completed" },
-  { name: "COVID-19 Booster", status: "completed" },
-  { name: "Tetanus", status: "completed" },
+  { name: "Rotavirus vaccine (Rotarix®)", status: "completed" },
+  { name: "Pneumococcal vaccine (Prevenar 13®)", status: "completed" },
+  { name: "Meningococcal vaccine (Nimenrix®)", status: "completed" },
+  { name: "Chickenpox (Varicella) vaccine (Varilrix®)", status: "completed" },
+  { name: "Hepatitis A vaccine (Havrix 720®)", status: "completed" },
+  { name: "Haemophilus influenzae type b (Hib) vaccine", status: "completed" },
 ];
 
 export const TIMELINE: TimelineEvent[] = [

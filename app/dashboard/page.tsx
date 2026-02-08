@@ -1,6 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { Printer, Plus, Sparkles, BrainCircuit } from "lucide-react";
+import { Printer, Plus} from "lucide-react";
 import Sidebar from "./_components/Sidebar";
 import Header from "./_components/Header";
 import HistoryTimeline from "./_components/HistoryTimeline";
@@ -12,19 +11,13 @@ import {
   Vaccinations,
   QRCard,
 } from "./_components/SummaryCards";
-import { USER_DATA, LAB_RESULTS, CONDITIONS } from "../lib/constants";
 import Link from "next/link";
 
 const DashboardPage: React.FC = () => {
-  const [aiInsight, setAiInsight] = useState<string | null>(null);
-  const [isAiLoading, setIsAiLoading] = useState(false);
 
   
 
-  useEffect(() => {
-    // Optionally fetch initial AI summary
-    // fetchAiInsight();
-  }, []);
+
 
   return (
     <div className="flex min-h-screen bg-slate-50 text-slate-900">
