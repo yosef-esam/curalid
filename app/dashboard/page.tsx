@@ -10,6 +10,7 @@ import {
   LabResults,
   Vaccinations,
   QRCard,
+  AISummary 
 } from "./_components/SummaryCards";
 import Link from "next/link";
 
@@ -37,6 +38,7 @@ const DashboardPage: React.FC = () => {
                 <p className="text-slate-500 font-medium">
                   Here is your daily health summary.
                 </p>
+                <AISummary />
               </div>
               <div className="flex gap-3">
            
