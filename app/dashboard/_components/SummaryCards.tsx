@@ -37,6 +37,15 @@ export const ProfileCard: React.FC = () => (
     <p className="text-slate-500 text-sm mb-6">
       {USER_DATA.gender}, {USER_DATA.age} yrs
     </p>
+        <Image
+        src={"/basma.jpeg"}
+        
+        width={96}
+        height={96}
+        className=" object-cover"
+      />
+    
+    
 
     <div className="w-full bg-slate-50 rounded-xl p-4 border border-slate-100 mb-6">
       <p className="text-[10px] font-bold text-blue-600 uppercase tracking-wider mb-1">
