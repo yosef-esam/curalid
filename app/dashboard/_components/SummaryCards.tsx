@@ -39,7 +39,7 @@ export const ProfileCard: React.FC = () => (
     </p>
         <Image
         src={"/basma.jpeg"}
-        
+        alt={"dna phto"}
         width={96}
         height={96}
         className=" object-cover"
