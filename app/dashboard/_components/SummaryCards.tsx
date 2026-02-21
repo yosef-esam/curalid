@@ -42,7 +42,7 @@ export const ProfileCard: React.FC = () => (
         alt={"dna phto"}
         width={130}
         height={96}
-        className=" object-cover"
+        className=" object-cover h-full w-full "
       />
     
     
