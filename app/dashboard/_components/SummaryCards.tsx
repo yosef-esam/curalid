@@ -40,7 +40,7 @@ export const ProfileCard: React.FC = () => (
         <Image
         src={"/dna.png"}
         alt={"dna phto"}
-        width={96}
+        width={130}
         height={96}
         className=" object-cover"
       />
