@@ -38,7 +38,7 @@ export const ProfileCard: React.FC = () => (
       {USER_DATA.gender}, {USER_DATA.age} yrs
     </p>
         <Image
-        src={"/basma.jpeg"}
+        src={"/dna.png"}
         alt={"dna phto"}
         width={96}
         height={96}
